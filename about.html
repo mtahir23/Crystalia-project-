@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | Crystalia</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- ✅ Bootstrap & Font Awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet">
+  <!-- Styles -->
+   <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div id="navbar-container"></div>
+
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+
+          // load navbar JS after navbar HTML is injected
+          const script = document.createElement('script');
+          script.src = 'js/navbar.js';
+          document.body.appendChild(script);
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    </script>
+  </header>
+
+
+    <!-- 🌿 About Section -->
+    <section class="about">
+        <div class="about-container">
+            <h2>About Crystalia</h2>
+            <p>
+                At <strong>Crystalia</strong>, we believe in the natural beauty and healing energy of crystals.
+                Our journey began with a passion for the mysterious power hidden within nature’s gems.
+                Every crystal we offer is carefully selected to promote balance, peace, and positive energy.
+            </p>
+            
+            <p>
+                We don’t just sell crystals — we share their stories. 
+                From the gentle aura of Rose Quartz to the deep spiritual strength of Amethyst, 
+                our collection is designed to help you connect with your inner self and live with harmony.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/healing crystales.jpg" alt="Healing Crystals">
+        </div>
+    </section>
+
+    <!-- ✨ Mission Section -->
+     <div class="container row m-auto">
+       <section class="mission col-lg-12 col-md-12 col-sm-12">
+           <h2>Our Mission</h2>
+           <p>
+    Our mission is to share the natural beauty and healing energy of crystals with the world.
+    We believe every crystal carries unique vibrations that inspire peace and positivity.
+    Crystalia aims to help people find balance, harmony, and inner strength.
+    Through our collection, we promote mindfulness and spiritual connection.
+    We’re dedicated to bringing light, love, and healing energy into everyday life.
+   
+           </p>
+       </section>
+       <section class="vission col-lg-12 col-md-12 col-sm-12">
+           <h2>Our Vision</h2>
+           <p>
+             Our vision is to become a trusted source of natural crystal energy and wellness.
+             We aspire to create a world where beauty and healing coexist in harmony.
+             Crystalia envisions spreading awareness about the power of crystals for inner peace.
+             We aim to inspire self-discovery, positivity, and spiritual growth in every individual.
+             Our goal is to make crystal healing a beautiful part of everyday life.
+           </p>
+       </section>
+       <section class="team-section col-lg-12 col-md-12 col-sm-12">
+     <h2>Our Team</h2>
+     <div class="team-container">
+       <div class="team-member">
+         <img src="images/Tahir.jpg" alt="Muhammad Tahir">
+         <h3>Muhammad Tahir</h3>
+         <p>Founder & Creative Director</p>
+       </div>
+       <div class="team-member">
+         <img src="images/Shayan.jpg" alt="Muhammad Shayan">
+         <h3>Muhammad Shayan</h3>
+         <p>Lead Designer</p>
+       </div>
+       <div class="team-member">
+         <img src="images/Abdullah.jpg" alt="Abdullah">
+         <h3>Abdullah</h3>
+         <p>Marketing Head</p>
+       </div>
+     </div>
+   </section>
+    </div>
+
+<!-- 🌿 FOOTER -->
+<footer class="text-light py-5" style="background-color: #4B3A63;">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      
+      <!-- 🌸 Company Info -->
+      <div class="col-lg-4 col-md-6 text-center text-md-start">
+          <img src="images/crystalia-logo.png" alt="Crystalia Logo" class="mb-3" style="max-width: 180px;">
+        <p class="mb-3">Explore the beauty of natural crystals that inspire peace, energy, and harmony.</p>
+
+        <div class="d-flex justify-content-center justify-content-md-start gap-2">
+          <a href="https://facebook.com" target="_blank" class="btn btn-primary btn-sm rounded-circle">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="btn btn-info btn-sm rounded-circle text-white">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="btn btn-danger btn-sm rounded-circle">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="btn btn-primary btn-sm rounded-circle">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- ⚡ Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="mb-4">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="footer-link text-light text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="about.html" class="footer-link text-light text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="offers.html" class="footer-link text-light text-decoration-none">Special Offers</a></li>
+          <li class="mb-2"><a href="product.html" class="footer-link text-light text-decoration-none">Products</a></li>
+          <li class="mb-2"><a href="contact.html" class="footer-link text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 💎 Products -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="mb-4">Products</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="amethyst.html" class="footer-link text-light text-decoration-none">Amethyst</a></li>
+          <li class="mb-2"><a href="diamond.html" class="footer-link text-light text-decoration-none">Diamond</a></li>
+          <li class="mb-2"><a href="amber.html" class="footer-link text-light text-decoration-none">Amber</a></li>
+          <li class="mb-2"><a href="home decoration.html" class="footer-link text-light text-decoration-none">Home Decoration</a></li>
+          <li class="mb-2"><a href="jewellery.html" class="footer-link text-light text-decoration-none">Jewellery</a></li>
+        </ul>
+      </div>
+
+      <!-- 📞 Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="mb-4">Contact Info</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <i class="fas fa-map-marker-alt me-2"></i>
+           I.I.Chandrigar Road, Saima Trade Tower, Karachi, Pakistan
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+1234567890" class="footer-link text-light text-decoration-none">+1 (234) 567-890</a>
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:contact@crystalia.com" class="footer-link text-light text-decoration-none">contact@crystalia.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🔸 Divider + Copyright -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <hr class="border-light mb-4">
+        <div class="text-center small">
+          <p class="mb-0">&copy; 2024 Crystalia. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ✅ JS Files (Load Last for Performance) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
